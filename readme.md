@@ -29,11 +29,18 @@ Before building and flashing the RCP firmware in Simplicity Studio (`.slcp` Soft
 4. **Install `RAIL Utility, RF Path (RAIL 3)`**
    * **RF Path Mode:** Set to `Path 1`.
 
+  <img width="1390" height="447" alt="image" src="https://github.com/user-attachments/assets/cd8c42c5-ef30-495b-a6db-268e297a3c07" />
+
 5. **Install `RAIL Utility, RF Path Switch Control (RAIL 3)`**
    * Ensure this component is installed (add it manually if it is not already present in the project) and map the control pins (`SL_RAIL_UTIL_RF_PATH_SWITCH_RADIO_ACTIVE`, etc.) to match your board schematic.
+     
+  <img width="1350" height="924" alt="image" src="https://github.com/user-attachments/assets/508977af-0a76-4c59-a188-7f308e7edc0d" />
 
 6. **Install `Radio Utility, FEM`**
    * Download and enable the Front-End Module (FEM) utility component to configure the external PA/LNA control signals.
+   
+  <img width="1373" height="821" alt="image" src="https://github.com/user-attachments/assets/6bfa1bd9-f083-444c-b863-999f14882db8" />
+  <img width="1378" height="940" alt="image" src="https://github.com/user-attachments/assets/40fec67c-48c4-43a6-ac2d-63b1d43bef77" />
 
 ## Troubleshooting
 
