@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ASCII"?>
+<device:XMLDevice xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:device="http://www.silabs.com/ss/hwconfig/document/device.ecore" name="pin_tool.EFR32FG28A120F1024GM48" partId="mcu.arm.efr32.fg28.efr32fg28a120f1024gm48" contextId="com.silabs.sdk.stack.simplicity_sdk:2026.6.2._-18522878464189041308">
+  <mode name="DefaultMode">
+    <property object="DefaultMode" propertyId="mode.diagramLocation" value="100, 100"/>
+    <property object="EUSART0" propertyId="ABModule.selectedRequirement" value="eusart%T%SL_CPC_DRV_UART_VCOM%T%sl_cpc_drv_uart_eusart_vcom_config.h"/>
+    <property object="EUSART0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PC00" propertyId="ABModule.selectedRequirement" value="gpio%T%SL_RAIL_UTIL_RF_PATH_SWITCH_CONTROL%T%sl_rail_util_rf_path_switch_config.h"/>
+    <property object="PC00" propertyId="pin.reserve" value="Reserved"/>
+    <property object="PD02" propertyId="ABModule.selectedRequirement" value="gpio%T%SL_RAIL_UTIL_RF_PATH_SWITCH_RADIO_ACTIVE%T%sl_rail_util_rf_path_switch_config.h"/>
+    <property object="PD02" propertyId="pin.reserve" value="Reserved"/>
+    <property object="PORTIO" propertyId="portio.eusart0.enable.rx" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.eusart0.enable.tx" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.eusart0.location.rx" value="9"/>
+    <property object="PORTIO" propertyId="portio.eusart0.location.tx" value="8"/>
+    <property object="PORTIO" propertyId="portio.prs.enable.asynch0" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.prs.enable.asynch1" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.prs.enable.asynch5" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.prs.location.asynch0" value="4"/>
+    <property object="PORTIO" propertyId="portio.prs.location.asynch1" value="5"/>
+    <property object="PORTIO" propertyId="portio.prs.location.asynch5" value="16"/>
+    <property object="PRS.ASYNCH0" propertyId="ABModule.selectedRequirement" value="prs%T%SL_FEM_UTIL_RX%T%sl_fem_util_config.h"/>
+    <property object="PRS.ASYNCH0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PRS.ASYNCH1" propertyId="ABModule.selectedRequirement" value="prs%T%SL_FEM_UTIL_TX%T%sl_fem_util_config.h"/>
+    <property object="PRS.ASYNCH1" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PRS.ASYNCH3" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PRS.ASYNCH4" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PRS.ASYNCH5" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PRS.ASYNCH6" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PRS.SYNCH0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PRS.SYNCH3" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PTI" propertyId="ABModule.selectedRequirement" value="pti%T%SL_RAIL_UTIL_PTI%T%sl_rail_util_pti_config.h"/>
+    <property object="PTI" propertyId="ABPeripheral.included" value="true"/>
+  </mode>
+  <modeTransition>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.source" value="RESET"/>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.target" value="DefaultMode"/>
+  </modeTransition>
+</device:XMLDevice>

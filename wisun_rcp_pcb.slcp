@@ -1,0 +1,155 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: wisun_rcp_pcb
+label: wisun_rcp_pcb
+description: |
+  The Wi-SUN RCP (radio coprocessor) application provides a radio interface to a Linux host. It is meant to be paired with wsbrd (Wi-SUN Network implementation for Linux) to run as a Linux border router device.
+category: Wi-SUN Examples
+filter:
+- name: Device Type
+  value:
+  - RCP
+- name: Project Difficulty
+  value:
+  - Advanced
+- name: Wireless Technology
+  value:
+  - Wi-SUN
+package: wisun_rcp_app
+quality: production
+readme:
+- path: readme.md
+tag:
+- prebuilt_demo
+- hwfilter:device:device_supports_wisun
+sdk:
+  vendor: silabs
+  id: simplicity_sdk
+  version: 2026.6.2
+toolchain_settings: [
+  ]
+component:
+- package: simplicity_sdk
+  vendor: silabs
+  id: EFR32FG28A120F1024GM48
+- package: simplicity_sdk
+  vendor: silabs
+  id: brd4001a
+- package: simplicity_sdk
+  vendor: silabs
+  id: cpc_recommend_vcom_usart
+- package: simplicity_sdk
+  instance:
+  - vcom
+  vendor: silabs
+  id: cpc_secondary_driver_uart_eusart
+- package: simplicity_sdk
+  vendor: silabs
+  id: cpc_secondary_recommended_uart_interface
+- package: simplicity_sdk
+  vendor: silabs
+  id: fem_util
+- package: simplicity_sdk
+  vendor: silabs
+  id: iostream_retarget_stdio
+- package: simplicity_sdk
+  vendor: silabs
+  id: iostream_rtt
+- package: simplicity_sdk
+  vendor: silabs
+  id: sl_rail_util_rf_path
+- package: simplicity_sdk
+  vendor: silabs
+  id: sl_rail_util_rf_path_switch
+- package: simplicity_sdk
+  vendor: silabs
+  id: wisun_default_radioconf
+- package: simplicity_sdk
+  vendor: silabs
+  id: wisun_rcp_app
+- package: simplicity_sdk
+  vendor: silabs
+  id: wisun_stack_debug
+other_file:
+- path: doc/readme_img0.png
+- path: doc/readme_img1.png
+configuration:
+- condition:
+  - cpc_secondary
+  name: SL_CPC_RX_PAYLOAD_MAX_LENGTH
+  value: '2038'
+- condition:
+  - cpc_secondary
+  name: SL_CPC_TX_QUEUE_ITEM_MAX_COUNT
+  value: '2'
+- condition:
+  - cpc_secondary
+  name: SL_CPC_RX_BUFFER_MAX_COUNT
+  value: '2'
+- condition:
+  - cpc_secondary
+  name: SL_CPC_DRV_UART_VCOM_RX_QUEUE_SIZE
+  value: '2'
+- condition:
+  - cpc_secondary
+  name: SL_CPC_DRV_UART_VCOM_TX_QUEUE_SIZE
+  value: '2'
+- condition:
+  - cpc_secondary
+  name: SL_CPC_DRV_UART_EXP_RX_QUEUE_SIZE
+  value: '2'
+- condition:
+  - cpc_secondary
+  name: SL_CPC_DRV_UART_EXP_TX_QUEUE_SIZE
+  value: '2'
+- condition:
+  - cpc_secondary
+  name: SL_CPC_DRV_UART_MIKROE_RX_QUEUE_SIZE
+  value: '2'
+- condition:
+  - cpc_secondary
+  name: SL_CPC_DRV_UART_MIKROE_TX_QUEUE_SIZE
+  value: '2'
+- condition:
+  - cpc_secondary
+  - cpc_secondary_driver_spi
+  name: SL_CPC_RX_BUFFER_MAX_COUNT
+  value: '3'
+- condition:
+  - cpc_secondary
+  name: SL_CPC_DRV_SPI_EXP_RX_QUEUE_SIZE
+  value: '3'
+- condition:
+  - cpc_secondary
+  name: SL_CPC_DRV_SPI_EXP_TX_QUEUE_SIZE
+  value: '2'
+- condition:
+  - cpc_secondary
+  name: SL_CPC_DRV_SPI_MIKROE_RX_QUEUE_SIZE
+  value: '3'
+- condition:
+  - cpc_secondary
+  name: SL_CPC_DRV_SPI_MIKROE_TX_QUEUE_SIZE
+  value: '2'
+- name: SL_BOARD_ENABLE_VCOM
+  value: '1'
+- condition:
+  - micriumos_kernel
+  name: OS_CFG_APP_HOOKS_EN
+  value: '1'
+- condition:
+  - micriumos_kernel
+  name: OS_CFG_DBG_EN
+  value: '1'
+- name: SL_RAIL_UTIL_PTI_BAUD_RATE_HZ
+  value: '3200000'
+- name: SL_MAIN_START_TASK_STACK_SIZE_BYTES
+  value: '2048'
+- condition:
+  - device_sdid_220
+  name: SL_RAIL_UTIL_SFM_SEQUENCER_SUN_MODULATIONS_SELECTION
+  value: SL_RAIL_UTIL_SFM_SEQUENCER_SUN_MODULATIONS_OFDM
+ui_hints:
+  highlight:
+  - path: readme.md
+    focus: true
+

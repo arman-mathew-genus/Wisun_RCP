@@ -1,0 +1,27 @@
+#CRC Codes for initially generated config files -- do not modify!
+FreeRTOSConfig.h=-2074097408
+SEGGER_RTT_Conf.h=1106241583
+nvm3_default_config.h=2077879080
+psa_crypto_config.h=-1015468510
+rail/radio_settings.radioconf=685232200
+sl_core_config.h=-1155159984
+sl_cpc_config.h=-87109859
+sl_cpc_drv_uart_eusart_vcom_config.h=-201240041
+sl_cpc_kernel_config.h=621582866
+sl_cpc_security_config.h=1165366314
+sl_device_init_dcdc_config.h=1567633028
+sl_device_init_emu_config.h=1253289061
+sl_device_init_hfxo_config.h=1393642171
+sl_fem_util_config.h=1218744774
+sl_main_start_task_config.h=970954541
+sl_mbedtls_config.h=-1486113646
+sl_mbedtls_device_config.h=1643556419
+sl_memory_manager_config.h=-1512080091
+sl_memory_manager_region_config.h=1621080429
+sl_radioprs_config_inst.h=-1352249944
+sl_rail_util_pa_config.h=344421865
+sl_rail_util_pa_tables_config.h=609109151
+sl_rail_util_pti_config.h=1738964589
+sl_rail_util_rf_path_config.h=-1649904743
+sl_rail_util_rf_path_switch_config.h=-1881773275
+sl_sleeptimer_config.h=-1567116306
